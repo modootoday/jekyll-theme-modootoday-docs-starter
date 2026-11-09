@@ -13,6 +13,8 @@ modootoday:
   # The languages of the en, ko/ and ja/ pages, with a switcher in the header.
   languages: [en, ko, ja]
   language_switcher: header
+  # Theme scripts load as files, with no inline script, so the site works under a strict Content-Security-Policy.
+  csp: strict
   # One page per record of _data/plugins.json, written by: modootoday-stubs . --records --write
   records:
     plugins: {title: name, description: summary, facts: [category, version, tags], body: readme}
